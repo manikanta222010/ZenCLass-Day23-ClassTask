@@ -85,14 +85,13 @@ async function saveUser(id) {
     console.log(name)
 
     const data = await fetch(
-        "https://616ae6d916e7120017fa1125.mockapi.io/users/",
+        "https://616ae6d916e7120017fa1125.mockapi.io/users/" +id,
         {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name: name, avatar: avatar })
         }
-    ).then(response => response.json())
-    .then(data=> console.log(data))
+    )
 
     getAllUsers()
 }
