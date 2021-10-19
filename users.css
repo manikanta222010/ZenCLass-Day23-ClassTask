@@ -1,0 +1,61 @@
+.user-container{
+    background-color: white;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.5s;
+}
+
+body{
+    background-image: linear-gradient(to right top, #0e4516, #376e1e, #689920, #a3c31b, #e8ed0b);
+    min-height: 100vh;
+}
+
+.user-avatar{
+    border-radius: 50%;
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+}
+
+.user-name{
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.user-container:hover {
+    transform: scale(1.04);
+    box-shadow: 15px 15px 38px -11px rgba(0 ,0 ,0, 0.5);
+}
+
+.user-container:hover .user-name{
+    color: crimson;
+}
+
+.user-form{
+    margin: 2rem;
+}
+
+.edit-user-form{
+    display: none;
+}
+
+button{
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: blanchedalmond;
+}
+
+button:hover{
+    background-color: rgb(240, 175, 70);
+}
+
+input{
+    padding: 5px;
+    height: 25px;
+    outline: none;
+}
